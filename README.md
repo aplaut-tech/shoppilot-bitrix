@@ -1,4 +1,4 @@
-bitirix-module
+shoppilot-bitrix
 ==============
 
 Модуль интеграции с 1С-Битрикс
