@@ -111,6 +111,9 @@ class shoppilot_reviews_api
 				);
 				while($arOrderItem = $rsBasket->Fetch()) {
 					$arFields["order_lines"][] = array(
+						"product_id" => $arOrderItem["PRODUCT_ID"],
+						"product_xml_id" => $arOrderItem["PRODUCT_XML_ID"],
+						"catalog_xml_id" => $arOrderItem["CATALOG_XML_ID"],
 						"title" => $arOrderItem["NAME"],
 						"price" => $arOrderItem["PRICE"],
 						"count" => $arOrderItem["QUANTITY"]
